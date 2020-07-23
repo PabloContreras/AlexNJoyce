@@ -24,6 +24,35 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	<link rel="icon" type="image/png" href="images/aj.png">
+	<style type="text/css">
+		.timeline_fathers:before {
+			position: absolute;
+	        top: 0;
+	        left: 0;
+	        right: 0;
+	        bottom: 0;
+	        content: '';
+	        border: 1px solid rgba(0, 0, 0, 0.15);
+	        z-index: -1;
+	        -webkit-transform: rotate(-1deg);
+	        -ms-transform: rotate(-1deg);
+	        transform: rotate(-1deg);
+    	}
+		
+		.timeline_fathers:after {
+			position: absolute;
+	        top: 0;
+	        left: 0;
+	        right: 0;
+	        bottom: 0;
+	        content: '';
+	        border: 1px solid rgba(0, 0, 0, 0.15);
+	        z-index: -1;
+	        -webkit-transform: rotate(1deg);
+	        -ms-transform: rotate(1deg);
+	        transform: rotate(1deg); 
+   		}
+	</style>
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
@@ -37,13 +66,15 @@
 
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav nav ml-auto">
-					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Inicio</span></a></li>
-					<li class="nav-item"><a href="#lovestory-section" class="nav-link"><span>Historia de Amor</span></a></li>
-					<!--li class="nav-item"><a href="#greeting-section" class="nav-link"><span>Greetings</span></a></li-->
-					<!--li class="nav-item"><a href="#people-section" class="nav-link"><span>People</span></a></li-->
-					<li class="nav-item"><a href="#when-where-section" class="nav-link"><span>Cuándo &amp; Dónde</span></a></li>
-					<!--li class="nav-item"><a href="#rsvp-section" class="nav-link"><span>RSVP</span></a></li-->
-					<!--li class="nav-item"><a href="#gallery-section" class="nav-link"><span>Galería</span></a></li-->
+					<li class="nav-item">
+						<a href="#home-section" class="nav-link"><span>Inicio</span></a>
+					</li>
+					<li class="nav-item">
+						<a href="#lovestory-section" class="nav-link"><span>Historia de Amor</span></a>
+					</li>
+					<li class="nav-item">
+						<a href="#when-where-section" class="nav-link"><span>Cuándo &amp; Dónde</span></a>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -169,7 +200,6 @@
 									<div class="row justify-content-start pb-3">
 										<div class="col-md-12 ftco-animate p-4 p-lg-5 text-center">
 											<span class="subheading mb-4">Acompáñanos a celebrar <br>nuestra boda</span>
-											<!--h2 class="mb-4">Alejandro <span>&amp;</span> Joyce</h2-->
 											<h2> <img src="images/aj.png" style="width: 50%;"></h2>
 											<span class="icon flaticon-rose-variant-outline-with-vines"></span>
 											<p class="time mb-4"><span></span></p>
@@ -186,7 +216,7 @@
 		</div>
 	</section>
 
-	<section class="ftco-section" id="nuestros-padres">
+	<section class="ftco-section" id="nuestros-padres" style="padding-bottom: 30px !important;">
 		<div class="container">
 			<div class="row justify-content-center pb-5">
 				<div class="col-md-12 text-center heading-section ftco-animate">
@@ -195,48 +225,41 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6">
-					<ul class="timeline animate-box">
-						<li class="animate-box">
-							<div class="timeline-panel ftco-animate text-md-right">
-								<div class="timeline-heading">
-									<span class="date">Octubre 31, 2013</span>
-									<h3 class="timeline-title">Cuando nos conocimos</h3>
-								</div>
+				<div class="col-md-5">
+					<ul class="timeline_fathers animate-box">
+						<div class="animate-box">
+							<ul class="timeline-panel">
 								<div class="timeline-body">
 									<p>
-										Por una amiga en común. Joyce y sus amigos se organizaron para hacer unas hamburguesas en casa de Charly para festejar que ya iban a graduarse. Ese día Mariana me pidió ayuda para hacer algunas cosas y después me invitó a la comida. La vi y me gustó, antes de que se fuera le pedí su número. 
+										Carlos A. Fernández Menchaca
 									</p>
+									<p>Maricela Contreras Martínez</p>
 								</div>
-							</div>
-						</li>
-						
+							</ul>
+						</div>
 					</ul>
 				</div>
-				<div class="col-md-6">
-					<ul class="timeline animate-box">
-						<li class="animate-box">
-							<div class="timeline-panel ftco-animate text-md-right">
-								<div class="timeline-heading">
-									<span class="date">Octubre 31, 2013</span>
-									<h3 class="timeline-title">Cuando nos conocimos</h3>
-								</div>
+				<div class="col-md-5 ml-auto">
+					<ul class="timeline_fathers animate-box">
+						<div class="animate-box">
+							<ul class="timeline-panel">
 								<div class="timeline-body">
 									<p>
-										Por una amiga en común. Joyce y sus amigos se organizaron para hacer unas hamburguesas en casa de Charly para festejar que ya iban a graduarse. Ese día Mariana me pidió ayuda para hacer algunas cosas y después me invitó a la comida. La vi y me gustó, antes de que se fuera le pedí su número. 
+										E. Alejandro Oropeza de la Madrid
+									</p>
+									<p>
+										Patricia Gasson Rascón
 									</p>
 								</div>
-							</div>
-						</li>
-						
+							</ul>
+						</div>
 					</ul>
 				</div>
 			</div>
-
 		</div>
 	</section>
 
-	<section class="ftco-section" id="lovestory-section">
+	<section class="ftco-section" id="lovestory-section" style="padding-bottom: 30px !important;">
 		<div class="container">
 			<div class="row justify-content-center pb-5">
 				<div class="col-md-12 text-center heading-section ftco-animate">
@@ -553,7 +576,7 @@
 		    							<p>
 		    								<span>Código de Grupo: KFAO20 </span>
 		    							</p>
-		    							<p><span>Valeria Sánchez Groups & Weddings Coordinator - 6122126634</span></p>
+		    							<p><span>Valeria Sánchez Groups & Weddings Coordinator - (612) 212 6634</span></p>
 			    						<p>
 			    							<span>Casa del mar golf resort & Spa <br>
 			    							Departamento de reservaciones - (624) 145 7718</span>
